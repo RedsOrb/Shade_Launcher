@@ -1,118 +1,161 @@
 <div align="center">
-  <img src="icon.png" alt="Shade Launcher Logo" width="256" />
+  <img src="icon.png" alt="Shade Launcher" width="200" />
 
-  # 🌌 Shade Launcher
+  # Shade Launcher
 
-  **Reproducible profiles. One deduplicated library. Scriptable workflows.**
-  
-  *Built in Rust with Tauri.*
+  **The modern Minecraft launcher built for power users.**
+
+  Reproducible profiles · Deduplicated storage · Blazing fast
+
+  <br />
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Built with Rust">
-    <img src="https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=tauri&logoColor=black" alt="Built with Tauri">
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Built with React">
+    <a href="https://github.com/RedsOrb/Shade_Launcher/releases/latest"><img src="https://img.shields.io/github/v/release/RedsOrb/Shade_Launcher?style=for-the-badge&color=white&labelColor=0a0a10&label=Download" alt="Latest Release"></a>
+    <img src="https://img.shields.io/github/license/RedsOrb/Shade_Launcher?style=for-the-badge&color=white&labelColor=0a0a10" alt="MIT License">
+    <img src="https://img.shields.io/github/stars/RedsOrb/Shade_Launcher?style=for-the-badge&color=white&labelColor=0a0a10" alt="Stars">
   </p>
 
   <p align="center">
-    <a href="#-what-is-shade">What is Shade?</a> •
-    <a href="#-why-choose-shade">Why Shade?</a> •
-    <a href="#-installation">Installation</a> •
-    <a href="#-quick-start">Quick Start</a>
+    <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+    <img src="https://img.shields.io/badge/Tauri-24C8D8?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
   </p>
 
-  <img src="screenshot.webp" alt="Shade Launcher - Profile Overview" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+  <p align="center">
+    <a href="#-download">Download</a> ·
+    <a href="#-features">Features</a> ·
+    <a href="#-why-shade">Why Shade?</a> ·
+    <a href="#-architecture">Architecture</a>
+  </p>
+
+  <br />
+
 </div>
 
----
-
-## 🌟 What is Shade?
-
-**Shade** is a Minecraft launcher with a global deduplicated library and declarative profiles (plain JSON). It materializes clean instances from a single source of truth, integrates flawlessly with **Modrinth** and **CurseForge**, and supports scriptable workflows via a CLI, while providing a stunning, polished desktop experience. Built in Rust with Tauri for a lightning-fast, lightweight app.
-
-> Define profiles in plain JSON, install content from Modrinth/CurseForge, and launch clean instances without duplicating the same mods across every pack!
+<br />
 
 ---
 
-## ✨ Why Choose Shade?
+<br />
 
-### 💾 **Save Disk Space**
-Install the same mod in 10 profiles, it's stored **once**. Shade uses a SHA-256 content-addressed store, so identical files are never duplicated. Say goodbye to 50GB of redundant mod copies eating up your drive!
+## 📥 Download
 
-### 🔄 **Reproducible Profiles**
-Your entire setup is a single JSON file. Version control it with Git, share it with friends, diff changes between versions, and restore it anytime. Profiles are declarative: the launcher materializes clean instances on demand.
+Get the latest version of Shade Launcher:
 
-### 🕵️ **No Hidden State**
-Plain JSON on disk. Predictable directory layout. Fully inspectable—no magic sync, no mystery database files, no state you can't see. If something breaks, you can debug it yourself.
+<div align="center">
 
-### ⚡ **Fast & Lightweight**
-A polished desktop UI for everyday play, backed by a serious CLI for scripting. Built in Rust with Tauri for minimal resource usage, snappy behavior, and near-instant startup.
+| Platform | Download | Format |
+|:---:|:---:|:---:|
+| 🪟 **Windows** | [**Download Installer**](https://github.com/RedsOrb/Shade_Launcher/releases/latest) | `.exe` setup |
+</div>
 
-### 🔒 **Private & Secure**
-No telemetry, no launcher account required. Your data stays local. Works perfectly offline after initial setup.
+> 🌐 **Or visit our website:** [shadelauncher.web.app](https://shadelauncher.web.app) for a one-click download.
 
----
-
-## 🛠️ Features
-
-| Feature | What it means for you |
-|:---|:---|
-| 📦 **Content-Addressed Store** | Mods stored once by hash, shared across all profiles |
-| 📜 **Declarative Profiles** | JSON manifests you can version control and share |
-| 👤 **Multi-Account** | Switch Microsoft accounts instantly with secure token storage |
-| 🌐 **Modrinth + CurseForge** | Search and install from both platforms directly in-app |
-| ⚙️ **All Mod Loaders** | Fabric, Forge, Quilt, NeoForge with automatic version resolution |
-| 💻 **CLI + Desktop** | Full-featured CLI for automation, polished UI for daily use |
+<br />
 
 ---
 
-## 📥 Installation
+<br />
 
-### Download
-Get the latest release from our [Releases page](https://github.com/RedsOrb/Shade_Launcher/releases).
+## ✨ Features
 
-- 🍏 **macOS**: `.dmg` installer
-- 🪟 **Windows**: `.msi` installer
-- 🐧 **Linux**: `.AppImage` or `.deb` package
+<table>
+<tr>
+<td width="50%">
+
+### 📦 Deduplicated Storage
+Install the same mod across 10 profiles — it's stored **once**. SHA-256 content-addressed store means zero wasted disk space.
+
+</td>
+<td width="50%">
+
+### 📜 Declarative Profiles
+Your setup is a single JSON file. Version control it, share with friends, diff changes, and restore anytime.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ⚡ Blazing Fast
+Built in Rust with Tauri. Near-instant startup, parallel downloads, and minimal memory footprint.
+
+</td>
+<td width="50%">
+
+### 🌐 Modrinth + CurseForge
+Search and install mods, resource packs, and shaders from both platforms directly in the launcher.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔒 Private & Secure
+Zero telemetry. No launcher account required. Your data stays local. Works perfectly offline.
+
+</td>
+<td width="50%">
+
+### ⚙️ All Mod Loaders
+Fabric, Forge, Quilt, NeoForge — with automatic version resolution and dependency management.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 👤 Multi-Account
+Switch between Microsoft accounts instantly with secure, encrypted token storage.
+
+</td>
+<td width="50%">
+
+### 🕵️ No Hidden State
+Plain JSON on disk. Predictable directory layout. Fully inspectable — no magic, no mystery.
+
+</td>
+</tr>
+</table>
+
+<br />
 
 ---
 
-## 🚀 Quick Start
+<br />
 
-Get up and running in seconds:
+## 💡 Why Shade?
 
-```bash
-# Add your Microsoft account
-shade account add
+Most launchers come with bloat, telemetry, and opaque state. Shade takes a different approach:
 
-# Create a Fabric 1.21.4 profile
-shade profile create my-profile --mc 1.21.4 --loader fabric
+> **Your game setup is code.** Declarative, reproducible, and efficient.
 
-# Add a mod from Modrinth
-shade mod add my-profile sodium
+- **One library, infinite profiles** — Content-addressed deduplication means mods are shared, not copied
+- **Profiles are portable** — Plain JSON files you can git-commit, share, or restore
+- **Nothing hidden** — Every file is inspectable, every directory is predictable
+- **Built for speed** — Rust backend with parallel I/O, no Electron overhead
+- **Your data is yours** — No accounts, no tracking, no cloud sync you didn't ask for
 
-# Launch the game!
-shade launch my-profile
-```
+<br />
 
 ---
+
+<br />
 
 ## 🏗️ Architecture
 
-Shade treats your game setup like code: **declarative**, **reproducible**, and **efficient**.
-
-| Principle | Implementation |
+| Principle | How it works |
 |:---|:---|
-| **Single source of truth** | Profiles are JSON manifests. Instances are derived artifacts, regenerated on demand. |
+| **Single source of truth** | Profiles are JSON manifests. Instances are derived, regenerated on demand. |
 | **Deduplication** | SHA-256 content-addressed store. One file, infinite profiles. |
-| **No magic** | Plain JSON on disk. Predictable layout. Fully inspectable state. |
-| **Modular** | Auth, Minecraft data, and profiles are isolated. Swap or extend without breaking everything. |
-| **CLI-first** | Every feature works from the command line. Script it, automate it, pipe it. |
+| **Transparency** | Plain JSON on disk. Predictable layout. Fully inspectable state. |
+| **Modular** | Auth, Minecraft data, and profiles are isolated and swappable. |
 
----
+<br />
 
-## 📂 Data Layout
+### 📂 Data Layout
 
-```text
+```
 ~/.shade/
 ├── store/                    # Content-addressed storage
 │   ├── mods/sha256/
@@ -122,13 +165,50 @@ Shade treats your game setup like code: **declarative**, **reproducible**, and *
 │   └── <id>/profile.json
 ├── instances/                # Materialized game directories
 ├── minecraft/                # Versions, libraries, assets
-├── accounts.json             # Account tokens (keep private)
+├── accounts.json             # Encrypted account tokens
 └── config.json               # Launcher settings
 ```
 
+<br />
+
 ---
 
+<br />
+
+## 🛡️ Tech Stack
+
+| Layer | Technology |
+|:---|:---|
+| **Backend** | Rust |
+| **Framework** | Tauri v2 |
+| **Frontend** | React + TypeScript |
+| **Storage** | SHA-256 content-addressed filesystem |
+| **Auth** | Microsoft OAuth (MSAL) |
+| **APIs** | Modrinth API, CurseForge API |
+
+<br />
+
+---
+
+<br />
+
+## 📄 License
+
+Shade Launcher is open-source software licensed under the [MIT License](LICENSE).
+
+<br />
+
+---
 
 <div align="center">
-  <p>Released under the <a href="LICENSE">MIT License</a>.</p>
+  <br />
+  <img src="icon.png" alt="Shade" width="48" />
+  <br /><br />
+  <b>Shade Launcher</b>
+  <br />
+  <sub>Built with ❤️ in Rust</sub>
+  <br /><br />
+  <a href="https://github.com/RedsOrb/Shade_Launcher">GitHub</a> ·
+  <a href="https://github.com/RedsOrb/Shade_Launcher/releases">Releases</a> ·
+  <a href="https://github.com/RedsOrb/Shade_Launcher/issues">Report Bug</a>
 </div>
